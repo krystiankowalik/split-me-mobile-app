@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Split Me</string>
+    <string name="server_client_id">213259931000-4tb5fm8cs8v46qm64otnfa0l6rmltjnq.apps.googleusercontent.com</string>
+    <string name="shared_prefs">com.github.krystiankowalik.splitme.mobile.shared_prefs</string>
+    <string name="no_value">no_value</string>
+    <string name="google_id_token">google_id_token</string>
+    <string name="keycloak_mobile_client_id">MobileClient</string>
+    <string name="keycloak_mobile_grant_type">urn:ietf:params:oauth:grant-type:token-exchange</string>
+    <string name="keycloak_mobile_subject_token_type">urn:ietf:params:oauth:token-type:jwt</string>
+    <string name="keycloak_access_token">keycloak_access_token</string>
+</resources>
