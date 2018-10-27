@@ -119,7 +119,7 @@ class LoginActivity : AppCompatActivity() {
             keycloakApiClient
                     .service
                     .exchangeToken(
-                            clientId = getString(R.string.keycloak_mobile_client_id),
+                            clientId = getString(R.string.keycloak_rest_api_client_id),
                             grantType = getString(R.string.keycloak_mobile_grant_type),
                             subjectToken = sharedPreferencesManager.read(getString(R.string.google_id_token)),
                             subjectTokenType = getString(R.string.keycloak_mobile_subject_token_type)

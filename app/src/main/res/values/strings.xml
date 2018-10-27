@@ -5,6 +5,7 @@
     <string name="no_value">no_value</string>
     <string name="google_id_token">google_id_token</string>
     <string name="keycloak_mobile_client_id">MobileClient</string>
+    <string name="keycloak_rest_api_client_id">RestAPI</string>
     <string name="keycloak_mobile_grant_type">urn:ietf:params:oauth:grant-type:token-exchange</string>
     <string name="keycloak_mobile_subject_token_type">urn:ietf:params:oauth:token-type:jwt</string>
     <string name="keycloak_access_token">keycloak_access_token</string>

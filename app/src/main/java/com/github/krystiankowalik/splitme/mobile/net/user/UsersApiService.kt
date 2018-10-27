@@ -3,11 +3,12 @@ package com.github.krystiankowalik.splitme.mobile.net.user
 import com.github.krystiankowalik.splitme.mobile.model.user.User
 import io.reactivex.Observable
 import retrofit2.http.GET
+import retrofit2.http.Header
 
 interface UsersApiService {
 
-    @get:GET("users/")
-    val allUsers: Observable<List<User>>
+    @GET("users/")
+    fun allUsers(@Header("authorization") token:String): Observable<List<User>>
 
    /* @GET("users/{id}")
     fun getUserById(@Path("id") id: Int) : Observable<User>

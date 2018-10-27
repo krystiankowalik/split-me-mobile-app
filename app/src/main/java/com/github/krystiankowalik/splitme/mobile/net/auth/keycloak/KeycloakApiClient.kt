@@ -15,8 +15,8 @@ import javax.inject.Inject
 
 class KeycloakApiClient() {
 
-    @Inject private lateinit var prefsManager: SharedPreferencesManager
-    @Inject private lateinit var gson: Gson
+    @Inject lateinit var prefsManager: SharedPreferencesManager
+    @Inject lateinit var gson: Gson
 
     companion object {
         private val BASE_URL = "http://192.168.0.12:8080/"

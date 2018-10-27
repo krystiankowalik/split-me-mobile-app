@@ -18,12 +18,16 @@ class SharedPreferencesManager(val context: Context) {
 
         val savedValue = sharedPreferences.getString(key,
                 context.getString(R.string.no_value))
-        Log.e("Saved ", savedValue + " under key: " + key)
+        Log.e("Saved ", savedValue ?: context.getString(R.string.no_value)+" under key: "+key)
     }
+
+    fun write(key: Int, string: String) = write(context.getString(key), string)
+
 
     fun read(key: String): String {
         val defVal = context.getString(R.string.no_value)
-        return sharedPreferences.getString(key, defVal)
-
+        return sharedPreferences.getString(key, defVal) ?: context.getString(R.string.no_value)
     }
+
+    fun read(key: Int) = read(context.getString(key))
 }
